@@ -1,5 +1,94 @@
+function App()
+{
+  if(true)
+  {
+  var v=100
+  let l=200
+  const c=300
+  v++;
+  // l++;
+  // console.log("let:"+l);
+  // c++;
+  // console.log("const:+c");
+  }
+  return(
+    <>
+    <h1>variable : global : {v}</h1>
+    <h2>does not work let and const : because local</h2>
+    </>
+  )
+}
+export default App
+/*
+function App()
+{
+  let myfun=(a,b,c)=>{
+    var tot=a+b+c
+    document.getElementById("res").innerHTML=`<h2>Total:${tot}</h2>`;
+  }
+  return(
+    <>
+    <h1>Arrow Functions without parameter</h1>
+    <h2>Note: onclick C must be caps <br></br> don't use double quotes</h2>
+    <h2>Note: in calling function don't use parenthesis when without passing args</h2>
+    <button onClick={myfun(10,20,30)}>clickme</button>
+    <div id="res"></div>
+    </>
+  )
+}
+export default App 
+*/
+
+/*
+import myimg from './images/img6.jpg'
+function App()
+{
+  return(<>
+  <center>
+    <h2>Image Demo using as expression</h2>
+    <center></center>
+    <img src={myimg} width="75%" height="auto" alt="path is wrong"></img>
+    </center>
+    
+    </>
+  )
+} */
+// export default App
+/*
+function App()
+{
+  var a=900
+  var b=6000
+  var c=500
+  return(
+    <>
+    <h2>Biggest Among 2no's using conditional or ternary operator</h2>
+    { <h1>biggest number: {a>b?a:b}</h1> }
+    <h1>biggest number among 3 numbers :{(a>b && a>c)?a:(b>c?b:c)}</h1>
+    </>
+  )
+}
+export default App
+*/
+/*
+function App()
+{
+  var a=10
+  var b=20
+  var c="KAVIYA"
+  return(<>
+    <h1>Total:{a+b}</h1>
+    <marquee bgcolor="red"><font size="6">{c}</font></marquee>
+
+  </>)
+}
+export default App
+*/
+
+/*
 import React from "react";
-class App extends React.Component
+
+class Parent  extends React.Component
 {
   render(){
     return(<>
@@ -15,14 +104,29 @@ Cupidatat velit excepteur tempor aliquip qui aliquip anim officia voluptate amet
 Ut cupidatat labore amet non excepteur eu adipisicing pariatur. Tempor Lorem aute velit anim velit. Ullamco nisi ut nisi fugiat laboris dolor quis tempor eu sint consequat ex. In esse amet velit quis officia ut velit pariatur aliquip id cupidatat sunt elit exercitation. Excepteur nulla sunt Lorem culpa. Amet ea laborum aliquip aliqua laborum anim id commodo.
 
 Officia qui sint excepteur laboris amet non Lorem eu elit. Commodo eiusmod sunt nostrud cupidatat. Fugiat est id laborum ut. Do elit dolore quis nisi aliquip nulla occaecat consequat est Lorem. Excepteur ut eu enim occaecat reprehenderit elit esse veniam eiusmod do incididunt. Ut pariatur deserunt ut elit ex consectetur amet sunt est voluptate deserunt nulla.</p>
-      
+   </>)
+  }
+}
+class App extends Parent
+{
+  render ()
+  {
+    return(<>
+    <Parent/>
+    <h1>welcome to class components</h1> 
+     <h2>welcome to class components</h2> 
+      <h3>welcome to class components</h3> 
+       <h4>welcome to class components</h4>
+       <p>Ad nostrud adipisicing id tempor consectetur ipsum adipisicing. Laboris reprehenderit dolor reprehenderit et et eu amet. Enim excepteur commodo culpa magna veniam ipsum. Nulla duis non adipisicing do enim. Enim consectetur culpa ut non magna. Aliquip labore velit proident nulla ut tempor mollit magna dolor culpa eu.
 
+                      Occaecat enim ex officia sit ipsum cillum quis adipisicing ad. Ea magna adipisicing duis dolore deserunt eiusmod amet. Deserunt anim id magna ut qui voluptate consectetur amet amet.
 
-  
-   </> )
+Do id esse ullamco do anim nulla minim esse mollit laborum sint. Id Lorem nulla qui id ad amet in minim. Dolore commodo minim sit ullamco Lorem pariatur id qui elit labore. Sunt anim tempor ullamco in cillum deserunt laboris elit ipsum id et. Reprehenderit culpa reprehenderit in ipsum ullamco quis adipisicing ut officia. Fugiat sunt commodo anim commodo. Consectetur enim consequat eiusmod voluptate irure anim incididunt ex labore exercitation proident irure excepteur.</p>
+       </>) 
   }
 }
 export default App
+*/
 /*
 function App()
 {
