@@ -1,4 +1,133 @@
 function App()
+{ 
+  var unit=410   
+   
+  return(
+    <>
+    <h1> react simple  if  else ifstatement </h1>
+    <h2>{(unit<=100 && "0/unit") || 
+    (unit>=101 && unit<=200 && "Rs."+(unit-100)*2) ||
+    (unit>=201 && unit<=300 && "Rs."+(200+(unit-200)*3))||
+    (unit<=301 && unit<=400 && "Rs."+(500+(unit-300)*4)) ||
+    "₹"+(900+(unit-400)*5) }
+</h2>
+    </>
+  )
+}
+export default App
+/*
+function App()
+{
+  var avg=30
+  return(
+    <>
+    <h1> react simple  if  else ifstatement </h1>
+    <h2>{(avg>=85 && "outstanding") || (avg>=75 && "excellent") ||(avg>=65 && "very good") ||"fair"}
+</h2>
+    </>
+  )
+}
+export default App/*
+/*
+function App()
+{
+  var m=0
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(m%4===0 && "leap year")|| "not a leap year"}</h2>
+    </>
+  )
+}
+export default App */
+/*
+function App()
+{
+  var a=54
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(a>18 && "eligible")|| "not eligible"}</h2>
+    </>
+  )
+}
+export default App */
+/*
+function App()
+{
+  var num=10
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(num%2==0  && "even") ||"odd"}</h2>
+    </>
+  )
+}
+export default App /*
+/*
+function App()
+{
+  var m=0
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(m>0 && "+ve")|| (m<0 && "-ve") || (m===0 && "zero")}</h2>
+    </>
+  )
+}
+export default App */
+/*
+function App()
+{
+  var m=0
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(m%4===0 && "leap year")|| "not a leap year"}</h2>
+    </>
+  )
+}
+export default App */
+/*
+function App()
+{
+  var a=54
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(a>18 && "eligible")|| "not eligible"}</h2>
+    </>
+  )
+}
+export default App */
+/*
+function App()
+{
+  var num=10
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(num%2==0  && "even") ||"odd"}</h2>
+    </>
+  )
+}
+export default App /*
+/*
+function App()
+{
+  var mark=30
+  return(
+    <>
+    <h1> react if statement </h1>
+    <h2>{(mark>34 && "pass")|| "fail"}</h2>
+    </>
+  )
+}
+export default App */
+
+
+/*
+function App()
 {
   if(true)
   {
@@ -18,7 +147,7 @@ function App()
     </>
   )
 }
-export default App
+export default App */
 /*
 function App()
 {
