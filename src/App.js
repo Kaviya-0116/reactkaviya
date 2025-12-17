@@ -1,4 +1,83 @@
 function App()
+{
+  var arr=[11,22,33,44,55,66,77,88,99]
+  var s=0
+  var ma=arr[0]
+
+  return(
+    <>
+    <h1>react loop map model</h1>
+    <h2>old mo del</h2>
+    {arr[0]}
+    {arr[1]} 
+    {arr[2]}
+    {arr[3]}
+    {arr[4]}
+    {arr[5]}
+    {arr[6]}   
+    {arr[7]} 
+    {arr[8]}
+
+    <h2>New model map(loop)</h2>
+    
+    {arr.map((s)=><>{s}<br></br></>)}
+      <h2>new model map(loop)</h2>
+      <ol type="I">
+        {arr.map((s)=><li>{s}</li>)}
+      </ol>
+      <h2>sum of array</h2>
+      <div style={{display:"none"}}>
+      {arr.map((item)=><>{s=s+item}<br></br></>)}
+      </div>
+      <h3>sum of array:{s}</h3>
+
+      <h2>maximum of array</h2>
+      <div style={{display:"none"}}>
+      {arr.map((s)=><>{ma<s && <>{ma=s}</>}</>)}
+      </div>
+      <h3>Max of array:{ma}</h3>
+    
+    </>
+  )
+
+}
+export default App
+/*
+function App()
+{
+  var arr=[11,12,13,14,15]
+  var[v1,,v2,...v3]=arr //,, -skipp two values ,,, -skip three values.
+  return(<>
+  <h1>spread operator   </h1>
+  <h2>index 0:{v1}</h2>
+  <h2>index 1:{v2}</h2>
+  <h2>index 5:{v3}</h2>
+  // {/* <h2>index 0:{arr[3]}</h2> }
+  {/* <h2>index 0:{arr[1]}</h2> */
+// }
+  // </>)
+// }
+// export default App
+/*
+function App()
+{
+  var res="fail"
+  var avg=85.5
+  return(<>
+  <h1>mark pass or fail</h1>
+  <h2>
+    {
+    (res==="pass" && 
+      ((avg>=85 && "outstanding") ||
+       (avg>=75 && "excellent") ||
+       (avg>=65 && "very good") 
+       ||"fair"))||"No grade because fail"}
+</h2>
+  </>)
+}
+export default App */
+/*    
+function App()
 { 
   var unit=410   
    
@@ -14,7 +93,7 @@ function App()
     </>
   )
 }
-export default App
+export default App */
 /*
 function App()
 {
