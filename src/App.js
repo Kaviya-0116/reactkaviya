@@ -1,45 +1,163 @@
+
+ /*import React from "react";
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state={
+      studentname:this.props.sname,
+      studentmark:this.props.mark
+    }
+  }
+  render()
+  {
+    return(
+      <>
+      <h1>Combine react state + props</h1>
+      <h2>Student Name:{this.state.studentname}</h2>
+      <h2>Student Mark:{this.state.studentmark}</h2>
+      </>
+    )
+  }
+}
+export default App
+/*import React from "react";
+class App extends React.Component
+{
+  constructor()
+  {
+    super()
+    this.state={sno:111,
+      sname:"kaviya",
+       marks:[88,56,87,98,67]
+    }
+  }
+  show=()=>{
+    this.setState({sname:"kaviya T"})
+  }
+
+  dis=()=>{
+    this.setState({marks:[76,98,99,89,79]})
+  }
+
+  dis1=()=>{
+    const newmarks=[...this.state.marks]
+    newmarks[2]=99
+    this.setState({marks:newmarks})
+  }
+  render()
+  {
+    return(
+      <>
+      <h1>This is class components</h1>
+      <h2>Serial number:{this.state.sno}</h2>
+       <h2>Serial name:{this.state.sname}</h2>
+        <h2>student mark:{this.state.marks}</h2>
+          {this.state.marks.map((v,index)=><>Mark:{index+1} = {v}<br></br></>)}
+          <button onClick={this.show}>update name</button>
+          <button onClick={this.dis}>update all mark</button>
+          <button onClick={this.dis1}>update single mark</button>
+        
+      </>
+    )
+  }
+}
+export default App
+
+/* import { aadhar, accno, place, sname } from "./mycomponents/commonvariables";
+import Kaviya from "./mycomponents/Kaviya"
+
+
 function App()
 {
-  var arr=[11,22,33,44,55,66,77,88,99]
-  var s=0
-  var ma=arr[0]
-
   return(
     <>
-    <h1>react loop map model</h1>
-    <h2>old mo del</h2>
-    {arr[0]}
-    {arr[1]} 
-    {arr[2]}
-    {arr[3]}
-    {arr[4]}
-    {arr[5]}
-    {arr[6]}   
-    {arr[7]} 
-    {arr[8]}
-
-    <h2>New model map(loop)</h2>
-    
-    {arr.map((s)=><>{s}<br></br></>)}
-      <h2>new model map(loop)</h2>
-      <ol type="I">
-        {arr.map((s)=><li>{s}</li>)}
-      </ol>
-      <h2>sum of array</h2>
-      <div style={{display:"none"}}>
-      {arr.map((item)=><>{s=s+item}<br></br></>)}
-      </div>
-      <h3>sum of array:{s}</h3>
-
-      <h2>maximum of array</h2>
-      <div style={{display:"none"}}>
-      {arr.map((s)=><>{ma<s && <>{ma=s}</>}</>)}
-      </div>
-      <h3>Max of array:{ma}</h3>
+    <Kaviya/>
+    <h1>this is default components</h1>
+    <h1>my name:{sname}</h1>
+    <h1> my city:{place}</h1>
+    <h1>my aadhar:{aadhar}</h1>
+    <h1>my accno :{accno}</h1>
+    </>
+  )
+}
+export default App
+/*import Kaviya from "./mycomponents/Kaviya"
+function App()
+{
+  return(
+    <>
+    <Kaviya/>  
+     parent calling action 
+    <h1>this is default app components</h1>
     
     </>
   )
+}
+export default App */
+/*
+function App()
+{
+  var arr=[11,22,33,44,78,98,43,27,12,56,111,119,222]
+  var s=0
+  var ma=arr[0]
 
+   var order=arr
+   var fans=""
+  return(
+    <>
+      <h1>React Loop map method</h1>
+      <h2>old model</h2>
+      {arr[0]}
+      {arr[1]}
+      {arr[2]}
+      {arr[3]}
+      <h2>New Model Map (loop)</h2>
+      {arr.map((v)=><>{v}+</>)}
+      <h2>New Model Map (loop)</h2>
+      <ol type="I">
+      {arr.map((v)=><li>{v}</li>)}
+      </ol>
+      <h2>Task: Sum of array</h2>
+      <div style={{display:"none"}}>
+      {arr.map((item)=><>{s=s+item}<br></br></>)}
+      </div>
+      <h3>Sum of Array:{s}</h3>
+
+      
+      <div style={{display:"none"}}>
+      {arr.map((v)=><>{ma<v && <>{ma=v} </>}</>)}    
+      </div>
+      <h3>Max of Array:{ma}</h3>
+
+      <h2>Ascending order</h2>
+      <div style={{display:"none"}}>{order.sort((x,y)=>(x-y))}</div>
+      {order.map((item)=><>{item} + </>)}
+    
+      <h2>descending order</h2>
+      <div style={{display:"none"}}>{order.sort((x,y)=>(y-x))}</div>
+      {order.map((item)=><>{item},</>)}
+
+      <h3>Adding element in an array</h3>
+      <div style={{display:"none"}}>{order.push(999)}</div>
+      {order.map((item)=><>{item},</>)}
+      <br></br>
+      <h3>remove last element in an array</h3>
+      <div style={{display:"none"}}>{order.pop()}</div>
+      <div style={{display:"none"}}>{order.pop()}</div>
+      <div style={{display:"none"}}>{order.pop()}</div>      
+      {order.map((item)=><>{item},</>)}
+
+    <h2>Remove last comma or plus or any char</h2>
+      <div style={{display:"none"}}>{order.map((item)=><>{fans=fans+item+","}</>)}</div>
+      {fans.slice(0,-1)}  
+
+
+
+
+    </>
+  )
 }
 export default App
 /*
