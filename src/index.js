@@ -1,19 +1,28 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
 var sobj={
-  rno:1001,
-  sname:"kaviya",
-  mark:12,
-  rank:37,
-  grade:"super",
-  location:"kodumudi"
-  
+rno:1001,
+sname:"Kaviya",
+mark:[85,77,66,98,78,99],
+rank:7,
+grade:"O",
+location:"kodumudi",
+aadharno:278233561846,
+phone:9952750512,
+height:"152cm",
+ismarried:false,
+hobbies:{
+  hobby1:"surfing",
+  hobby2:"playingshuttle",
+  hoby3:"readingarticles"}
 }
+  
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

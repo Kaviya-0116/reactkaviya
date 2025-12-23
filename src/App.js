@@ -1,4 +1,116 @@
+import React from 'react'
 
+const App = () => {
+  return (
+    <div>
+      <form>
+      <input type ="text" placeholder='Enter user name'></input><br></br>
+        <input type ="password" placeholder='Enter password'></input><br></br>
+          <input type ="number" placeholder='accno'></input><br></br>
+            <input type ="email" placeholder='Enter mail id'></input><br></br>
+
+            <label>Select Gender</label>
+            <input type="radio" name="gender"></input>Male
+            <input type="radio" name="gender"></input>Female
+            <input type="radio" name="gender"></input>Others
+            <br></br>
+
+            <label>Select course</label>
+            <input type="checkbox" name="C"></input>C
+              <input type="checkbox" name="C1"></input>C++
+            <input type="checkbox" name="C2"></input>Java
+            <input type="checkbox" name="C3"></input>Pthyon
+            <input type="checkbox" name="C4"></input>none of th above
+            <br></br>
+            <select>
+              <option selected>Select Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <br></br>
+
+            select color:<input type='color' name='col'></input>
+            <br></br>
+            Select DOB:<input type='date' name='dob'></input>
+            <br></br>
+            Select time:<input type='time' name="time"></input>
+            <br></br>
+            select week:<input type="week" name="week"></input>
+            <br></br>
+
+
+          <button><b><i>clickme</i></b></button>
+          <input type ="submit"></input>
+          <input type='button' value="clickme"></input>
+          
+          </form>
+    </div>
+  )
+}
+
+export default App
+
+ /*import parse from 'html-react-parser'
+
+function App(props)
+{
+
+var ans=""
+    for(var s in props.data)
+    {
+ans=ans+`<li>${s}=${props.data[s]}</li>`
+console.log(s)
+
+    }
+
+return(
+  <>
+  <h1>
+  {parse("<ol>"+ans+"</ol>"
+  )}</h1>
+  </>
+)
+
+}
+export default App
+/* //Finding DATATYPE
+function App(props)
+{
+var a=props.data.rno;
+var b=props.data.sname;
+var c=props.data.mark;
+var d=props.data.ismarried;
+var e=props.data.location;
+var f=props.data.hobbies
+
+
+return(
+  <>
+  <h3>type of rno:{typeof(a)}</h3>
+  <h3>type of sname:{typeof(b)}</h3>
+  <h3>type of mark:{typeof(c)}</h3>
+  <h3>type of  is married:{typeof(d)}</h3>
+  <h3>type of location:{typeof(e)}</h3>
+  <h3>type of hobbies:{typeof(f)}</h3>
+  <h3>type of mark:{Array.isArray(c)?"it is array":"it is jsonobject"}</h3>
+  <h3>type of hobbies:{Array.isArray(f)?"it is array":"it is json object"}</h3>
+  
+  
+  
+  </>
+)}
+
+export default App
  /*import React from "react";
 class App extends React.Component
 {
