@@ -1,12 +1,105 @@
-import React from 'react'
 
+import React, { useState } from 'react'
+import { useEffect } from 'react'
 const App = () => {
+  const[name,setName]=useState("kaviya💔")
+  useEffect(()=>{
+    document.title=`Hello! ${name}`
+  })
+  const dis=()=>{
+    setTimeout(()=>{
+    setName("1.love 2.life")
+  },3000)
+
+  }
+  return (
+    <div>
+      <h1>UseEffect Hook</h1>
+      <button onClick={dis}>change Name</button>
+      <br></br>
+      {name}
+    </div>
+  )
+}
+
+export default App
+
+/*import React from "react"
+import { useState } from "react"
+const App = () =>{
+
+  const[val,setVal]=useState(0)
+    const dis=(event)=>{
+      setVal(parseInt(event.target.value)+1)
+    }
+  
+return(
+  <div>
+  <button onClick={dis} value={val}> you clicked : {val} times</button>
+  
+    
+  </div>
+)
+}
+export default App
+/*
+import { useState } from "react"
+function App()
+{
+  const[count,setCount]=useState(100)
+  const show=(event)=>{
+    if(event.target.id==="b1")
+      setCount(count+1)
+    if(event.target.id==="b2")
+      setCount(count-1)
+    if(event.target.id==="b3")
+      setCount(count-5)
+  }
+  // const show1=()=>{
+  //   setCount(count+1)
+  // }
+  // const show2=()=>{
+  //   setCount(count-1)}
+  
+  return(
+    <>
+    <button id="b1" onClick={show}>Increment by 1</button>
+    <button id="b2" onClick={show}>Decrement by 1</button>
+    <button id="b3" onClick={show}>Decrement by 5</button>
+      {/* <buttom onClick={show1}>Increment By 1</buttom >
+    <button onClick={show2}>Decrement By 1</button>  
+    
+    <br></br>
+    <h2>{count}</h2>
+    </>
+  )
+
+}
+export default App
+
+/*
+import { useState } from 'react'
+import React from 'react'
+const App = () => {
+  const[name,setName]=useState("----")
+
+  const dis=(event)=>{  //dis= user defined functions//
+setName(event.target.value)   //argument not passed//           
+  }
+  const show=(v)=>{
+    console.log(v)      //argument passed//
+  }
+  const find=(v1,v2)=>{
+    console.log(v1+v2)      // two argument passed//
+  }
+
+
   return (
     <div>
       <form>
-      <input type ="text" placeholder='Enter user name'></input><br></br>
-        <input type ="password" placeholder='Enter password'></input><br></br>
-          <input type ="number" placeholder='accno'></input><br></br>
+      <input type ="text" value={name} onChange={dis} placeholder='Enter user name'></input><br></br>
+        <input type ="password"  onChange={()=>show("12345")} placeholder='Enter password'></input><br></br>
+          <input type ="number"  onChange={()=>find(12,34)} placeholder='accno'></input><br></br>
             <input type ="email" placeholder='Enter mail id'></input><br></br>
 
             <label>Select Gender</label>
@@ -17,13 +110,14 @@ const App = () => {
 
             <label>Select course</label>
             <input type="checkbox" name="C"></input>C
-              <input type="checkbox" name="C1"></input>C++
+            <input type="checkbox" name="C1"></input>C++
             <input type="checkbox" name="C2"></input>Java
             <input type="checkbox" name="C3"></input>Pthyon
             <input type="checkbox" name="C4"></input>none of th above
             <br></br>
+            
             <select>
-              <option selected>Select Month</option>
+              <option>Select Month</option>
               <option>January</option>
               <option>February</option>
               <option>March</option>
@@ -47,11 +141,38 @@ const App = () => {
             <br></br>
             select week:<input type="week" name="week"></input>
             <br></br>
+            select file:<input type='file' name="resume"></input>
+            <br></br>
 
 
-          <button><b><i>clickme</i></b></button>
-          <input type ="submit"></input>
-          <input type='button' value="clickme"></input>
+                    
+          
+          <label>Type address</label>
+          <textarea rows="7" cols="24"></textarea>
+          <br></br>
+
+          <label>list box</label>
+          <select size="4" multiple>
+            <option>sunday</option>
+            <option>monday</option>
+            <option>tuesday</option>
+            <option>wednesday</option>
+            <option>thursday</option>
+            <option>friday</option>
+            <option>saturday</option>
+          </select>
+          <br></br>
+
+          😊😘❤️🎶😍💔
+          <label>volume:</label>
+            <input type= "range"  min="0" max="6" ></input>
+            <br></br>
+<progress style={{background:"green",border:"2px solid orange"}} min="0" max="100" values="90"></progress>   
+
+
+          <button><b><i>clickme</i></b></button><br></br>
+          <input type ="submit"></input><br></br>
+          <input type='button' value="clickme"></input><br></br>
           
           </form>
     </div>
