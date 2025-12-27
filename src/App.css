@@ -1,38 +1,54 @@
-.App {
+
+#outer{
+  box-shadow: 5px 10px 15px 10px gray;
+  border-radius: 50px;
+  width:50%;
+  /* height:400px; */
+  background-color:rgb(24,212,190);
+  transform: translate(50%,50%);
+}
+input,button{
+  margin-bottom:40px ;
+  display: block;
+}
+input{
+  width: 75%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 5px solid black;
   text-align: center;
+  font-size: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  background-color: black;
+  color: rgb(24,212,190);
+  font-size: 35px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  padding: 20px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  border-radius: 19px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover{
+  font-weight: bold;
+  border: 3px dashed rgb(24,212,190);
+  outline: 4px solid darkblue;
+  color: rgb(24,212,190);
+  cursor: pointer;
+  background-color:black;
 }
-
-.App-link {
-  color: #61dafb;
+font{
+  position: relative;
+  animation-name: savianimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes savianimation
+{
+  from{left:-15px}
+  to{left:100px}
 }

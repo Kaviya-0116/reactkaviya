@@ -1,4 +1,55 @@
+import "./App.css"
+function  App()
+{
+  return(
+    <div  id="outer" align="center">
+      <div id="inner">
+      <font  id="savi"size="7" >🗝️</font>
+      <h2>Admin Panel</h2>
+      <input type ="text" placeholder="Enter user name here"></input>
+      <input type ="password" placeholder="Enter password"></input>
+      <p align="right"><button>Login</button></p>
+      </div>
+    </div>
+  )
 
+}
+export default App
+/* import React, { useState } from 'react';
+import './App.css';
+import React from 'react';
+ // Import your CSS file
+
+function App() {
+  return (
+    <div className="App">
+      <div className="login-container">
+        <h1 className="login-header">🗝️</h1>
+         <h1 className="login-header">ADMIN PANEL</h1>
+        <form >
+          <input
+            type="text"
+            placeholder="Username"
+            className="login-input"
+          />
+          <br></br>
+          <input
+            type="password"
+            placeholder="Password"
+            className="login-input"
+          />
+          <br></br>
+          <button type="submit" className="login-button">
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+/*
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 const App = () => {
